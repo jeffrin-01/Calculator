@@ -9,9 +9,11 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  background: linear-gradient(135deg, #0068f0,rgb(2, 179, 238), #003881);
   color: #0f172a;
   padding: 1rem;
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
 }
 
 .calculator {
@@ -123,3 +125,14 @@ body {
     font-size: 1rem;
   }
 }
+ @keyframes gradientMove{
+   0%{
+      background-position: 0% 50%;
+   }
+   50%{
+      background-position: 100% 50%;
+   }
+   100%{
+      background-position: 0% 50%;
+   }
+ }
